@@ -5,19 +5,9 @@ import vue from '@vitejs/plugin-vue'
 
 export default defineConfig({
  plugins: [vue()],
- publicPath: '/public/',
+ base: '/public/',
  alias: {
     '@': fileURLToPath(new URL('./src', import.meta.url))
   }
  })
-
-// export default defineConfig({
-//  plugins: [vue()],
-//  base: '/carolingianroyaltyregistery/', 
-//  resolve: {
-//    alias: {
-//      '@': fileURLToPath(new URL('./src', import.meta.url))
-//    },
-//  }
-// })
 
