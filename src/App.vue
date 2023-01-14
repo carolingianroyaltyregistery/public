@@ -17,8 +17,8 @@ onMounted(() => {
     <div class="main">
         <!-- <header class="header-top header-bg"> -->
         <header>
-            <div>
-                <img alt="Vue logo" class="responsive" src="./assets/header.svg" height="125" />
+            <div class="header_pad">
+                <img alt="Vue logo" class="responsive" src="./assets/header.svg" height="90" />
             </div>
         </header>
 
@@ -64,6 +64,9 @@ onMounted(() => {
 </template>
 
 <style scoped>
+.header_pad{
+    padding: 10px;
+}
 .main {
     display: grid;
     grid-template-rows: 1fr 1fr;
